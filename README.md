@@ -1,6 +1,6 @@
 # Cash Balance Manipulator
 
-*Link:*  https://hortfrancis.github.io/cash-balance-manipulator/
+Location: [hortfrancis.github.io/cash-balance-manipulator](https://hortfrancis.github.io/cash-balance-manipulator/)
 
 This project demonstrates a web user interface for manipulating a cash balance, using React, with Redux. 
 
@@ -10,7 +10,7 @@ The page is responsive and should work well at all screen sizes (mobile or deskt
 
 **React** is a library used by frontend developers to create web applications that are fast and responsive. It allows developers to build UI components that update automatically as the user interacts with the application, without having to reload the entire page. This makes the application more efficient and responsive, which improves the user experience.
 
-**Redux** is a tool that helps developers manage the information in their web applications. It makes it easier for developers to store and share information between different parts of the application, which is important for building complex applications. It works with many different web development tools, and is often used alongside React.js.
+**Redux** is a tool that helps developers manage the information in their web applications. It makes it easier for developers to store and share information between different parts of the application, which is important for building complex web applications. 
 
 In this project, Redux is used to hold the value of the balance amount separately to the user interface components. 
 
@@ -35,13 +35,13 @@ In this project, Redux is used to hold the value of the balance amount separatel
 
 ## Dependencies 
 
-#Production
+### Production
 
 - `react`
 - `react-dom`
 - `react-redux`
 - `@reduxjs/toolkit`
 
-#Development 
+### Development 
 
 - `gh-pages`
