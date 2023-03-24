@@ -1,8 +1,12 @@
+* {
+  font-family: 'Space Mono', monospace;
+  background-color: #9CB0D9;
+  color: #034AA6;
+  font-size: 110%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +14,70 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  text-align: center;
+ 
+  /* Center everything horizontally and vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input, button {
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: #05AFF2;
+  border: 5px solid #034AA6;
+  border-radius: 5px;
+}
+
+input {
+  text-align: center;
+}
+
+/*  Hide the up and down arrows in the input field
+    https://www.geeksforgeeks.org/how-to-disable-arrows-from-number-input/
+*/
+input[type="number"]::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button:active, input:active, input[type="number"]:focus {
+  background-color: #05C7F2;
+}
+
+h1 {
+  background-color: #5096F2;
+}
+
+#balance {
+  font-size: 2rem;
+  background-color: #05C7F2;
+  padding: 0 0.5em;
+  border-radius: 5px;
+}
+
+#withdraw-button::before {
+  content: "\1F4B8"; /* Unicode code point for "money with wings" emoji */
+  margin-right: 0.5em;
+}
+
+#deposit-button::before {
+  content: "\1F4B0"; /* Unicode code point for "money bag" emoji */
+  margin-right: 0.5em;
+}
+
+#add-interest-button::before {
+  content: "\1F4C8";  /* Unicode code point for "Chart with Upwards Trend" emoji */
+  margin-right: 0.5em;
+}
+
+#add-charges-button::before {
+  content: "\1F4C9"; /* Unicode code point for "Chart with Downwards Trend" emoji */
+  margin-right: 0.5em;
 }
